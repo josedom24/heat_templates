@@ -3,11 +3,11 @@ heat_template_version: 2013-05-23
 description: Simple template to deploy a single compute instance
 
 parameters:
-image:
-type: string
-description: Image ID or image name to use for the server
-constraints:
-- custom_constraint: glance.image
+  image:
+   type: string
+   description: Image ID or image name to use for the server
+   constraints:
+     - custom_constraint: glance.image
 
 resources:
   my_instance:
