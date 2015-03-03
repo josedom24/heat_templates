@@ -15,7 +15,7 @@ resources:
     type: OS::Neutron::Port
     properties:
       network_id: 238f2e88-0322-43ce-895b-cadffab89dc9
-      fixed_ips:[{"subnet_id": "2a9545a5-4279-4e0d-a7f2-dff6695b73b7"}]
+      fixed_ips: [{"subnet_id": "2a9545a5-4279-4e0d-a7f2-dff6695b73b7"}]
       security_groups: ["default"]
 
   server1_floating_ip:
