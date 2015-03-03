@@ -14,7 +14,7 @@ resources:
     type: OS::Nova::Server
     properties:
       key_name: jdmr
-      image: Debian Wheezy
+      image: { get_param: image }
       flavor: m1.small
       networks: [{"network":"red de josedom"}]
 
