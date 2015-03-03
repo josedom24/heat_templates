@@ -21,5 +21,5 @@ resources:
     type: OS::Neutron::Port
     properties:
       network_id: 238f2e88-0322-43ce-895b-cadffab89dc9
-      security_groups: ["defaults"]
+      security_groups: ["default"]
 
