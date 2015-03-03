@@ -11,7 +11,7 @@ resources:
       flavor: m1.small
       networks: [{"network":"red de josedom"}]
 
-  my_instance:
+  my_instance2:
     type: OS::Nova::Server
     properties:
       key_name: jdmr
