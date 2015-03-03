@@ -9,4 +9,4 @@ resources:
       key_name: jdmr
       image: Debian Wheezy
       flavor: m1.small
-      networks:[{"network":"red de josedom"}]
+      networks: [{"network":"red de josedom"}]
