@@ -10,3 +10,11 @@ resources:
       image: Debian Wheezy
       flavor: m1.small
       networks: [{"network":"red de josedom"}]
+
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: jdmr
+      image: Debian Wheezy
+      flavor: m1.small
+      networks: [{"network":"red de josedom"}]
