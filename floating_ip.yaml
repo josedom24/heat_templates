@@ -21,5 +21,6 @@ resources:
   server1_floating_ip:
     type: OS::Neutron::FloatingIP
     properties:
-      floating_network_id: a86fc437-de50-4034-8e1a-f37a7b05537f
-	  port_id: { get_resource: server1_port }
+      floating_network_id: "a86fc437-de50-4034-8e1a-f37a7b05537f"
+      port_id: { get_resource: server1_port }
+
