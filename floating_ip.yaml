@@ -1,0 +1,25 @@
+heat_template_version: 2013-05-23
+
+description: Simple template to deploy a single compute instance
+
+resources:
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: jdmr
+      image: Debian Wheezy
+      flavor: m1.small
+      networks: [{"network":"red de josedom","port": { get_resource: server1_port }}]
+
+  server1_floating_ip:
+    type: OS::Neutron::FloatingIP
+    properties:
+      floating_network_id: a86fc437-de50-4034-8e1a-f37a7b05537f
+	  port_id: { get_resource: server1_port }
+
+  server1_port:
+    type: OS::Neutron::Port
+    properties:
+      network_id: 238f2e88-0322-43ce-895b-cadffab89dc9
+      security_groups: ["defaults"]
+
